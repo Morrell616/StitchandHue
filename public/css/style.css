@@ -50,12 +50,25 @@ html, body {
     padding:20px;
     background-color: #FFFAE5;
     margin-top: 20px;
+        }
+    .header-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;        
+        box-shadow: 0 4px 8px rgba(0,0, 0.1);
+
     }
     
-    .first-pic, .second-picture, .image-three, .image-four, .image-five {
-    width: 300px;
-    height: 200px; 
+    .image-folder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
     margin-bottom: 20px;
+    padding: 20px;
     border:#4682B4 solid 6px;
     }
     
@@ -68,15 +81,56 @@ html, body {
     }
     
     h1, h2 {
-        color: #FF6F61;
-    }
+        color: black;
+      }
     
     p {
     margin-bottom: 10px;
+    color: black;
+    padding: 20px;
     }
     
     .Colors {
     color: #4A4A4A;
     }
-
     
+    .instructions {
+      margin-bottom: 20px;
+      padding: 20px;
+     }
+
+     .interactive-section {
+        margin-bottom: 20px;
+        padding: 20px;
+     }
+
+     .palette-display {
+        margin-bottom: 20px;
+        padding: 20px;
+     }
+
+     .color-box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        display: inline-block;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+    @media (min-width: 760px) {
+    
+        .image-folder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 700px;
+            height: auto; 
+            margin-bottom: 20px;
+            padding: 30px;
+            border:#4682B4 solid 6px;
+            }
+    
+            p {
+                font-size: larger;
+    }
+

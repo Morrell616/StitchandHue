@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Color Palette</title>
+  <link rel="stylesheet" href="/css/colorpalette.css">
+</head>
+  <body>
+
+    <header class="header">
+      <figure>
+          <img src="img/bag.jpg" alt="CrochetBackground" class="header-image">
+      </figure>
+
+      <h1 class="title">Color Palette Generator</h1>
+
+    </header>
+
+    <div>
+      <label for="color-name">Enter a color name</label>
+      <input type="text" id="color-name" placeholder="e.g., blue, crimson">
+    </div>
+
+    <div>
+        <label for="color-scheme">Select Scheme Type:</label>
+        <select id="color-scheme">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+        </select>
+    </div>
+
+    <button id="generate-palette">Generate Palette</button>
+    
+      <div id="color-details">
+        <h3>Selected Color names and info</h3>
+        <p id="color-name-detail"></p>
+        <p id="color-hex-detail"></p>
+        <p id="color-rgb-detail"></p>
+      </div>
+
+    <div class="palette">
+      <h2>Your Custom Palette</h2>
+    </div>
+
+    <div id="generated-palette">
+      <div id="color1" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+      <div id="color2" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+      <div id="color3" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+      <div id="color4" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+      <div id="color5" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+
+    </div>
+
+      <script src="index.js"></script>
+  </body> 
+
+  <footer>
+    <p>Powered by <a href="https://www.thecolorapi.com">TheColorAPI</a>. Learn more about <a href="#">color theory</a> and explore new ideas for your projects!</p>
+    <p><a href="index.html">Home</a> | <a href="pattern.html">Crochet Patterns</a></p>
+    <p>&copy; 2025 Color Palette Generator JM</p>
+  </footer>
+
+</html>
+
