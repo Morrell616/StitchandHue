@@ -13,6 +13,7 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 150px;
+    border-bottom: solid 5px black;
     
     }
 
@@ -37,10 +38,12 @@ html, body {
     .header-right a:hover {
         background-color:teal;
         color:#000;
+        text-decoration: underline;
     }
     .header-right a.active {
         background-color:teal;
         color: white;
+        text-decoration: underline;
     }
 
     .header-right {
@@ -69,16 +72,7 @@ html, body {
     background-color: #FFFAE5;
     margin: 10px;
         }
-    .header-image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 150px;
-        height: auto;  
-        margin-bottom: 10px;      
-        box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
-
-    }
+  
     .heading-title {
         margin-bottom: 20px;
     }
