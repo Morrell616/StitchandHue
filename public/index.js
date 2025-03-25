@@ -19,9 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (tinycolor(userColor).isValid()) {
             chosenColorContainer.style.backgroundColor = tinycolor(userColor).toHexString();
             chosenColorContainer.textContent = userColor;
-        } else {
+        } else { 
+            alert("Please enter a valid color!")
             console.error("Invalid color was entered.");
+            return;
         }
+
+    
         const color = tinycolor(userColor);
         const hexCode = color.toHex();
         console.log("Hex code:", hexCode);
@@ -38,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.log("data received:", data);
             
                 displayColorDetails(data.colorInfo);
-
                 renderColorPalette(data.palette);
         } catch (error) {
             console.error("Error fetching color palette:", error);
@@ -48,11 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displayColorDetails(colorInfo) {
         const colorBoxHTML = `
-          <p><strong>Name:</strong> ${colorInfo.name.value}</p>
-          <p><strong>Hex Code:</strong> ${colorInfo.hex.value}</p>
-          <p><strong>RGB:</strong> ${colorInfo.rgb.value}</p>
-          <div class="chosen-color-box" "style="background-color: ${colorInfo.hex.value};"></div>
+    
+        <div class="chosen-color-box" style="background-color: ${colorInfo.hex.value};">
+            ${colorInfo.name.value}<br>${colorInfo.hex.value}
+        </div>
           `;
+
+          colorDetailsDiv.innerHTML = colorBoxHTML;
     }
 
     function renderColorPalette(palette) {

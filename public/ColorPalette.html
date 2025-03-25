@@ -7,13 +7,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  
+      <link rel="icon" type="image/png" href="img/favicon.png">
+
+
       <link rel="stylesheet" href="css/colorpalette.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.2/tinycolor.min.js"></script>
 
       <title>Granny Square Pattern</title>
   
   </head>
+
   <body>
     <div class="header">                           
      <a href= "#default" class = "title">Stitch And Hue</a>
@@ -23,22 +26,15 @@
         <a href="ColorPalette.html">Palette</a>
       </div>
     </div>
-  
 
-    <div class=" color-input">
-      <label for="color-name">Enter a color name</label>
-      <input type="text" id="color-name" placeholder="e.g., blue, crimson">
-    </div>
+  <article class=" user-generated-info">
+      <div class="color-input">
+        <label for="color-name">Please Enter a color name below</label>
+        <input type="text" id="color-name" placeholder="e.g., blue, crimson">
+      </div>  
 
-    <div id="color-details">
-      <h3>Your Chosen Color</h3>
-      <div class="chosen-color-box"></div>
-      <p id="chosen-color-info"></p>
-  </div>
-  
-
-    <div class="scheme-input">
-      <label for="color-scheme">Select Scheme Type:</label>
+      <div class="scheme-input">
+        <label for="color-scheme">Next select your scheme type:</label>
         <select id="color-scheme">
           <option value="monochrome">Monochrome</option>
           <option value="monochrome-dark">Monochrome-dark</option>
@@ -46,16 +42,22 @@
           <option value="analogic">Analogic</option>
           <option value="complement">Complement</option>
         </select>
-    </div>
+      </div>
 
-    <button id="generate-palette">Generate Palette</button>
+      <button id="generate-palette">Generate Your Custom Palette</button>
+  </article>
+  <h2 class="chosen-color">You chose the color:</h2>
+  <aside class = "api-generated-info">
+    <div id="color-details">
+      <div class="chosen-color-box"></div>
+      <p id="chosen-color-info"> You chose the color:</p>
+    </div>
     
-      <div id ="color-details">
-        <h3>Selected Color names and info</h3>
+    <div id ="color-specifications">
         <p id="color-name-detail"></p>
         <p id="color-hex-detail"></p>
         <p id="color-rgb-detail"></p>
-      </div>
+    </div>
 
     <div class="palette">
       <h2>Your Custom Palette</h2>
@@ -68,6 +70,7 @@
       <div id="color4" class="palette-box"></div>
       <div id="color5" class="palette-box"></div>
     </div>
+  </aside>  
 
   <script src="index.js"></script>
 </body> 
