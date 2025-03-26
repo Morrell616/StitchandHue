@@ -3,6 +3,7 @@
 html, body {
     padding: 0;
     margin: 0;
+    background-color: #779b98;
 }
 
 
@@ -108,6 +109,13 @@ html, body {
     margin-bottom: 10px;
     color: black;
     padding: 20px
+    }
+    aside, article {
+        padding: 20px;
+        margin: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+        background-color: beige;
     }
     
     .Colors {

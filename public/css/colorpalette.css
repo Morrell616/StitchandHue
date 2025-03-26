@@ -13,9 +13,7 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 150px;
-    width: 100%;
-    border-bottom: solid 5px black;
-    
+    border-bottom: solid 5px black;     
     }
 
     .header a.title {
