@@ -1,7 +1,7 @@
 @import url("reset.css");
 
 html, body {
-    padding: 10px;
+    padding: 0;
     margin: 0;
     background-color: #779b98;
    }
@@ -17,6 +17,7 @@ html, body {
     }
 
     .header a.title {
+        flex-wrap:nowrap;
         font-size: 36px;
         font-weight: bold;
         font-family: "Pacifico", sans-serif;

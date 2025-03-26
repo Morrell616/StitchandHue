@@ -12,7 +12,7 @@ Node.js v20.18.0
 npm 11.0
 Express.js  4.21.2
 
-Installation
+How to access Stitch and Hue
 Install Node.js
 Open your terminal and run node -v and npm -v. These versions should be >= v20.18.0 and 11.0 respectively.
 Run git clone https://github.com/Morrell616/StitchandHue in the directory of your choice.
