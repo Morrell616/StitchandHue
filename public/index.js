@@ -75,20 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-     function updateColors(colors) {
-        for (let i = 0; i < 5; i++) {
-            const colorDiv = document.getElementById(`color${i + 1}`);
-             if (colorDiv && colors[i]) {
-                    // Update the background color
-                    colorDiv.style.backgroundColor = colors[i].hex.value;
+     f
+});                 // Optional: Add the hex code as text inside the div
         
-                    // Optional: Add the hex code as text inside the div
-                    colorDiv.innerText = colors[i].hex.value;
-          } else if (colorDiv) {
-                    // Fallback for missing colors
-                    colorDiv.style.backgroundColor = "#FFFFFF";
-                    colorDiv.innerText = "N/A";
-          }
-        }
-    }  
-});
